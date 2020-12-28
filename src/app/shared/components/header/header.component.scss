@@ -1,0 +1,78 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+  box-shadow: 5px 5px #424242;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .logo-wrapper {
+    width: 100px;
+    height: 100px;
+
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+    li {
+      display: inline-block;
+      margin-right: 2rem;
+      font-family: "america-regular";
+
+      &.profile {
+        position: relative;
+
+        div {
+          position: absolute;
+          background-color: #424242;
+          padding: 0 30px 0 15px;
+          top: 45px;
+          left: 0;
+          border-radius: 2px;
+          width: max-content;
+
+          a {
+            color: #fff;
+            font-family: "america-regular";
+            margin: 20px 0;
+            text-transform: capitalize;
+            text-decoration: none;
+            display: block;
+          }
+        }
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      img {
+        width: 20px;
+        cursor: pointer;
+      }
+
+      img[alt="Search icon"] {
+        filter: invert(1);
+      }
+
+      img[alt="Profile image"] {
+        width: 40px;
+        border-radius: 50%;
+      }
+
+      img[alt="Notifications icon"] {
+        filter: saturate(1);
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<section
+  class="container"
+  [style.background-image]="article ? 'url(' + article.photo + ')' : ''"
+>
+  <p>magazines Article</p>
+  <h1>{{ article?.title | uppercase }}</h1>
+  <ul>
+    <li>
+      <a href="">the school of travel</a>
+      <img src="assets/images/arrow-r-icon.svg" alt="Arrow icon" />
+    </li>
+    <li>
+      <a href="">article</a>
+      <img src="assets/images/arrow-r-icon.svg" alt="Arrow icon" />
+    </li>
+    <li>
+      <a href="">{{ article?.title }}</a>
+    </li>
+  </ul>
+  <p>{{ article.created_at }}</p>
+</section>
